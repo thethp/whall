@@ -414,3 +414,36 @@ footer {
   text-align: center;
   font-size: 12px;
   font-weight: 300; }
+
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 10px 15px 0;
+    background: #383C3E; }
+  .profile {
+    max-width: 300px;
+    margin: 0 auto 20px; }
+  section {
+    padding: 80px; }
+    section h1 {
+      text-align: center; }
+    section ._sixty-thirty .col {
+      width: 100%; }
+      section ._sixty-thirty .col._left {
+        width: 100%;
+        display: block; }
+      section ._sixty-thirty .col._spacer {
+        display: none; }
+      section ._sixty-thirty .col._right {
+        display: table-row; }
+    section .row._experience-icons {
+      display: none; }
+  section._fifty-fifty .col._left,
+  section._fifty-fifty .col._right {
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 0; } }
+
+@media screen and (max-width: 720px) {
+  header nav a {
+    font-size: 14px; } }
