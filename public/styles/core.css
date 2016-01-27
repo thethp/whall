@@ -10,6 +10,7 @@ html,
 body {
   position: relative;
   width: 100%;
+  min-width: 500px;
   height: 100%;
   margin: 0 auto; }
 
@@ -94,7 +95,6 @@ section {
     top: 0;
     left: 50%;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     content: '';
     width: 0;
@@ -370,7 +370,6 @@ section {
           top: 50%;
           right: 5px;
           -webkit-transform: translateY(-50%);
-              -ms-transform: translateY(-50%);
                   transform: translateY(-50%);
           content: '';
           width: 0;
@@ -424,25 +423,25 @@ footer {
     margin: 0 auto 20px; }
   section {
     padding: 80px; }
-    section h1 {
-      text-align: center; }
-    section ._sixty-thirty .col {
-      width: 100%; }
-      section ._sixty-thirty .col._left {
-        width: 100%;
-        display: block; }
-      section ._sixty-thirty .col._spacer {
-        display: none; }
-      section ._sixty-thirty .col._right {
-        display: table-row; }
-    section .row._experience-icons {
-      display: none; }
+  section h1 {
+    text-align: center; }
   section._fifty-fifty .col._left,
   section._fifty-fifty .col._right {
     width: 100%;
     display: block;
     border: none;
-    padding: 0; } }
+    padding: 0; }
+  section .row._experience-icons {
+    display: none; }
+  section._sixty-thirty .col {
+    width: 100%; }
+    section._sixty-thirty .col._left {
+      width: 100%;
+      display: block; }
+    section._sixty-thirty .col._spacer {
+      display: none; }
+    section._sixty-thirty .col._right {
+      display: table-row; } }
 
 @media screen and (max-width: 720px) {
   header nav a {

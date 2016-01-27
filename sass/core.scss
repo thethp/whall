@@ -21,6 +21,7 @@ html,
 body {
   position: relative;
   width: 100%;
+  min-width: 500px;
   height: 100%;
   margin: 0 auto;
 }
@@ -569,32 +570,9 @@ footer {
 
   section {
     padding: 80px;
-
-    h1 {
-      text-align: center;
-    }
-    
-    ._sixty-thirty .col {
-      width: 100%;
-
-      &._left {
-        //retype because specificity :-/
-        width: 100%;
-        display: block;
-      }
-
-      &._spacer {
-        display: none;
-      }
-
-      &._right {
-        display: table-row;
-      }
-    }
-
-    .row._experience-icons {
-      display: none;
-    }
+  }
+  section h1 {
+    text-align: center;
   }
 
   section._fifty-fifty .col._left,
@@ -603,6 +581,28 @@ footer {
     display: block;
     border: none;
     padding: 0;
+  }
+
+  section .row._experience-icons {
+    display: none;
+  }
+
+  section._sixty-thirty .col {
+    width: 100%;
+
+    &._left {
+      //retype because specificity :-/
+      width: 100%;
+      display: block;
+    }
+
+    &._spacer {
+      display: none;
+    }
+
+    &._right {
+      display: table-row;
+    }
   }
 }
 
