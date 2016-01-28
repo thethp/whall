@@ -10,7 +10,7 @@ html,
 body {
   position: relative;
   width: 100%;
-  min-width: 500px;
+  min-width: 600px;
   height: 100%;
   margin: 0 auto; }
 
@@ -200,6 +200,7 @@ section {
 .cover {
   background-image: url(/images/consultant.png);
   background-size: cover;
+  display: block;
   z-index: 0; }
   .cover .curtain {
     position: absolute;
@@ -261,6 +262,7 @@ section {
     margin: 0 auto;
     padding: 0;
     width: 90%;
+    min-width: 420px;
     max-width: 850px;
     background-color: #FFF;
     border: 2px solid #BDCFD3;
@@ -346,6 +348,7 @@ section {
           color: #7CA0A8; }
         #contact form .checkboxes .checkbox-container._other {
           width: 100%;
+          border-right: 0;
           margin-top: 5px; }
           #contact form .checkboxes .checkbox-container._other input[type="text"] {
             border: solid 1px #DEE7E9;
@@ -441,8 +444,21 @@ footer {
     section._sixty-thirty .col._spacer {
       display: none; }
     section._sixty-thirty .col._right {
-      display: table-row; } }
+      display: table-row; }
+  #contact form .label-full-height {
+    display: block;
+    margin-bottom: 15px; }
+  #contact form .checkboxes {
+    width: 100%;
+    padding-left: 10%; }
+    #contact form .checkboxes .checkbox-container {
+      width: 44%;
+      border-right: 0; }
+  #contact form .select.preferred-contact {
+    margin-left: 0; } }
 
 @media screen and (max-width: 720px) {
+  .superfluous-text {
+    display: none; }
   header nav a {
     font-size: 14px; } }

@@ -21,7 +21,7 @@ html,
 body {
   position: relative;
   width: 100%;
-  min-width: 500px;
+  min-width: 600px;
   height: 100%;
   margin: 0 auto;
 }
@@ -370,6 +370,7 @@ section {
     margin: 0 auto;
     padding: 0;
     width: 90%;
+    min-width: 420px;
     max-width: 850px;
     background-color: $white;
     border: 2px solid $darkgreen;
@@ -573,6 +574,7 @@ footer {
   section {
     padding: 80px;
   }
+
   section h1 {
     text-align: center;
   }
@@ -606,9 +608,34 @@ footer {
       display: table-row;
     }
   }
+
+  #contact form {
+    .label-full-height {
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .checkboxes {
+      width: 100%;
+      padding-left: 10%;
+
+      .checkbox-container {
+        width: 44%;
+        border-right: 0;
+      }
+    }
+
+    .select.preferred-contact {
+      margin-left: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 720px) {
+  .superfluous-text {
+    display: none;
+  }
+
   header nav a {
     font-size: 14px;
   }
